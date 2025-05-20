@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>pomodoro</h1>
+  <div class="tabs">
+    <div class="tab active" id="pomodoro">pomodoro</div>
+    <div class="tab" data-time="300" id="short-break">short break</div>
+    <div class="tab" data-time="900" id="long-break">long break</div>
+  </div>
+  <div class="timer" onclick="toggletimer()">
+    <svg width="250" height="250">
+      <circle r="115" cx="125" cy="125" stroke-dasharray="722" stroke-dashoffset="0"></circle>
+    </svg>
+    <div class="time" id="time">25:00</div>
+  </div>
+  <div class="label" id="status">PAUSE</div>
+
+  <script src="pomodoro.js"></script>
+</body>
+</html>
